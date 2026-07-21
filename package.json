@@ -1,0 +1,15 @@
+{
+  "name": "graphql-profile",
+  "version": "1.0.0",
+  "description": "GraphQL profile page using 01-edu platform API",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve .",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "test:coverage": "node --experimental-vm-modules node_modules/.bin/jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}

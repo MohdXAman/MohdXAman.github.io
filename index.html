@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GraphQL Profile</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app">
+
+    <!-- ===== LOGIN VIEW ===== -->
+    <section id="login-view" class="view">
+      <div class="login-container">
+        <div class="login-logo">
+          <img src="cropped-Reboot-Logo.jpg" width="96" height="96" alt="Reboot logo" aria-hidden="true" />
+        </div>
+        <h1>GraphQL Profile</h1>
+        <p class="login-subtitle">Sign in with your 01-edu credentials</p>
+
+        <form id="login-form" novalidate>
+          <div class="form-group">
+            <label for="identifier">Username or Email</label>
+            <input
+              type="text"
+              id="identifier"
+              name="identifier"
+              placeholder="username or email@example.com"
+              autocomplete="username"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="••••••••"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+
+          <div id="login-error" class="error-message hidden" role="alert"></div>
+
+          <button type="submit" id="login-btn">Sign In</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== PROFILE VIEW ===== -->
+    <section id="profile-view" class="view hidden">
+      <header class="profile-header">
+        <div class="header-content">
+          <h1 class="header-title">My Profile</h1>
+          <button id="logout-btn" aria-label="Log out">Logout</button>
+        </div>
+      </header>
+
+      <main class="profile-content">
+
+        <!-- Section 1: User Information -->
+        <section class="card" id="user-section" aria-labelledby="user-heading">
+          <h2 id="user-heading">User Information</h2>
+          <div id="user-info" class="skeleton-loader">Loading...</div>
+        </section>
+
+        <!-- Section 2: XP & Progress -->
+        <section class="card" id="xp-section" aria-labelledby="xp-heading">
+          <h2 id="xp-heading">XP &amp; Progress</h2>
+          <div id="xp-info" class="skeleton-loader">Loading...</div>
+        </section>
+
+        <!-- Section 3: Audit Activity -->
+        <section class="card" id="audit-section" aria-labelledby="audit-heading">
+          <h2 id="audit-heading">Audit Activity</h2>
+          <div id="audit-info" class="skeleton-loader">Loading...</div>
+        </section>
+
+        <!-- Section 4: Statistics (mandatory graph section) -->
+        <section class="card" id="graphs-section" aria-labelledby="graphs-heading">
+          <h2 id="graphs-heading">Statistics</h2>
+          <div class="graphs-grid">
+            <div class="graph-half">
+              <h3 class="graph-title">Project Results</h3>
+              <div id="results-graph" class="skeleton-loader graph-placeholder">Loading...</div>
+            </div>
+            <div class="graph-half">
+              <h3 class="graph-title">Audit Ratio</h3>
+              <div id="audit-graph" class="skeleton-loader graph-placeholder">Loading...</div>
+            </div>
+            <div class="graph-full">
+              <div class="graph-title-row">
+                <h3 class="graph-title">XP Over Time</h3>
+                <select id="xp-graph-filter" class="program-select program-select-sm">
+                  <option value="all">All Programs</option>
+                </select>
+              </div>
+              <div id="xp-graph" class="skeleton-loader graph-placeholder">Loading...</div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </section>
+
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

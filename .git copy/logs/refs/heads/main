@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 4ad49e64d03b62ddae885af7a7f2c55311875cad Mohd202201922 <202201922@student.polytechnic.bh> 1784551757 +0300	clone: from https://learn.reboot01.com/git/moaman/graphql.git
+4ad49e64d03b62ddae885af7a7f2c55311875cad f9ce7334e32c560cebfa97741a19eff62661d60a moaman <mohdXaman@gmail.com> 1784552716 +0300	commit: create the structure and index file
+f9ce7334e32c560cebfa97741a19eff62661d60a bb7452900124fd5742ceee3c6f6cff04780539ea moaman <mohdXaman@gmail.com> 1784552942 +0300	commit: creating graphql.js
+bb7452900124fd5742ceee3c6f6cff04780539ea 85a733147edf6e62b6d7105fda91b1716f9fa82f moaman <mohdXaman@gmail.com> 1784553048 +0300	commit: creating profile.js
+85a733147edf6e62b6d7105fda91b1716f9fa82f 329578d4c7539157b55baa0b0446e9877ccabeca moaman <mohdXaman@gmail.com> 1784553199 +0300	commit: creating graphs.js
+329578d4c7539157b55baa0b0446e9877ccabeca 44fe98f0b9df25ad557a6e300f87c62dfad6c42b moaman <mohdXaman@gmail.com> 1784558048 +0300	commit: edit the style
+44fe98f0b9df25ad557a6e300f87c62dfad6c42b dcb101d0e1406b39e0b1461ecb39a1eeaa91af63 moaman <mohdXaman@gmail.com> 1784559110 +0300	commit: edit name and graph date
+dcb101d0e1406b39e0b1461ecb39a1eeaa91af63 529c8a6264c9eaad028355f3b85f963f8f7223d8 moaman <mohdXaman@gmail.com> 1784604193 +0300	commit: Add Reboot logo and change the color
+529c8a6264c9eaad028355f3b85f963f8f7223d8 d4aa623a8a6bd011e61d4586d35cd74687088a13 moaman <mohdXaman@gmail.com> 1784604279 +0300	commit: Remove cropped-Reboot-Logo.svg image
