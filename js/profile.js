@@ -21,6 +21,10 @@ export async function loadProfile() {
 // Handles both /<campus>/<program>/... and /<program>/... structures.
 export function extractProgram(path) {
   const parts = path.split('/').filter(Boolean);
+  // Surface a nested piscine track as its own program instead of lumping it
+  // under the parent module (e.g. /bahrain/bh-module/piscine-js/... -> piscine-js).
+  const piscine = parts.find(p => p.includes('piscine'));
+  if (piscine && piscine !== parts.at(-1)) return piscine;
   if (parts.length >= 3) return parts[1]; // /<campus>/<program>/<project>
   if (parts.length === 2) return parts[0]; // /<program>/<project>
   if (parts.length === 1) return parts[0];
